@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Goldi Kumari — Full-Stack &amp; AI/ML Developer</title>
+  <meta name="description"
+    content="Goldi Kumari — B.Tech CSE (IoT &amp; Cybersecurity) student, full-stack and AI/ML developer." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Custom cursor node -->
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav__mark"><span class="nav__mark-dot">.</span></a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+    <div class="nav__links" id="navLinks">
+      <a href="#about"><span class="nav__num"></span>About</a>
+      <a href="#experience"><span class="nav__num"></span>Experience</a>
+      <a href="#work"><span class="nav__num"></span>Work</a>
+      <a href="#research"><span class="nav__num"></span>Research</a>
+      <a href="#contact" class="nav__cta">Say Hello →</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <canvas id="nodeCanvas" class="hero__canvas"></canvas>
+    <div class="hero__grid"></div>
+
+    <div class="hero__content">
+      <h1 class="hero__name">
+        <span class="reveal-line"><span class="reveal-line__inner">GOLDI</span></span>
+        <span class="reveal-line"><span class="reveal-line__inner">KUMARI</span></span>
+      </h1>
+      <p class="hero__tagline reveal">
+      <h4>B.Tech Student in Computer Science & Engineering (IoT & Cybersecurity)
+      </h4>
+      <h5>bridging the gap between web development and
+        intelligent systems.</h5>
+      <h5>Building the Future with Full-Stack, IoT, and AI.</h5><br>
+
+      <h6><strong><b>Full-Stack Development:</b></strong> <i>Crafting
+          modern
+          web applications using Angular, React, Node.js, and Express</i>.</h6><br>
+      <h6><strong><b>Intelligent Systems:</b></strong> <i>Integrating Machine Learning, IoT
+          sensors, and Generative AI APIs into real-world software.</i></h6><br>
+      <h6><strong><b>Secure Architecture:</b></strong> <i>Building robust databases and secure
+          APIs
+          with JWT authentication and relational/NoSQL backends.
+          </p><br>
+          <div class="hero__actions reveal">
+            <a href="#work" class="btn btn--primary">View the work</a>
+            <a href="Goldi.pdf" download class="btn btn--ghost">Download Resume</a>
+            <a href="#contact" class="btn btn--ghost">Get in touch</a>
+          </div>
+    </div>
+
+    <div class="hero__status reveal">
+      <span class="status-dot"></span>
+      Currently interning at SKH Private Limited · Gurugram
+    </div>
+
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section__head">
+        <span class="section__tag">About</span>
+        <h2 class="section__title">Someone who ships,<br />not just prototypes.</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__text reveal-up">
+          <p>
+            Iam a passionate B.Tech student specializing in <strong>IoT and Cybersecurity</strong>,
+            currently in my third year at <strong>Dronacharya College of Engineering, Gurugram.</strong>
+            Most of what I build ends up deployed somewhere real — a canteen system ,predictive-maintenance models ,
+            a published paper presented on an international stage(ABU DHABI).
+          </p>
+          <p>My journey lies at the intersection of full-stack engineering and data intelligence.
+            I don't just build websites;</p>
+          <p>I am engineer
+            responsive, data-driven platforms that solve complex operational problems.</p>
+          <p>From deploying industrial IoT predictive
+            maintenance systems to architecting LLM-assisted pharmacogenomics tools,</p>
+          <p>I love taking raw data and turning it into
+            actionable, user-friendly software.</p>
+          <p>
+            I care less about collecting frameworks and more about whether the thing
+            actually works when someone else uses it.
+          </p>
+        </div>
+        <img src="gk.png" alt="goldi_image" width="350px" height="350px">
+
+        <div class="about__stats reveal-up">
+          <div class="stat">
+            <span class="stat__num">8.3</span>
+            <span class="stat__label">CGPA · Top&nbsp;10 rank, both semesters</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">4+</span>
+            <span class="stat__label">Deployed projects, live on the internet</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">250+</span>
+            <span class="stat__label">DSA problems solved on LeetCode</span><br>
+            <a href="https://leetcode.com/u/gol_ldi/" style="text-decoration: underline;color: blue;">See Here </a>
+          </div>
+          <div class="stat">
+            <span class="stat__num">2</span>
+            <span class="stat__label">Research papers, one presented in Abu&nbsp;Dhabi</span><br><a
+              href=https://iraj.in/journal/IJACEN//paper_detail.php?paper_id=22144
+              style="text-decoration: underline;color: blue;">See Here </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills reveal-up">
+        <div class="skills__group">
+          <h4>Languages</h4>
+          <div class="chips">
+            <span class="chip">C++</span><span class="chip">Java</span><span class="chip">Python</span><span
+              class="chip">JavaScript</span>
+          </div>
+        </div>
+        <div class="skills__group">
+          <h4>Frontend</h4>
+          <div class="chips">
+            <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Tailwind</span><span
+              class="chip">Bootstrap</span><span class="chip">Angular</span><span class="chip">React</span>
+          </div>
+        </div>
+        <div class="skills__group">
+          <h4>Backend &amp; Data</h4>
+          <div class="chips">
+            <span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">Flask</span><span
+              class="chip">FastAPI</span><span class="chip">MongoDB</span><span class="chip">MySQL</span><span
+              class="chip">SQL</span>
+          </div>
+        </div>
+        <div class="skills__group">
+          <h4>ML / AI</h4>
+          <div class="chips">
+            <span class="chip">scikit-learn</span><span class="chip">XGBoost</span><span class="chip">Model
+              Training</span>
+          </div>
+        </div>
+        <div class="skills__group">
+          <h4>Tools</h4>
+          <div class="chips">
+            <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Vercel</span><span
+              class="chip">Render</span><span class="chip">TiDB</span><span class="chip">Figma</span><span
+              class="chip">Postman</span><span class="chip">Canva</span><span class="chip">n8n</span><span
+              class="chip">Figma</span>
+          </div>
+        </div>
+        <div class="skills__group">
+          <h4> AI Tools</h4>
+          <div class="chips">
+            <span class="chip">Github Copilot</span><span class="chip">Claude</span><span
+              class="chip">Chatgpt</span><span class="chip">Figma AI</span><span class="chip">Blackbox AI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section section--dark" id="experience">
+
+      <div class="section__head">
+        <span class="section__tag">Experience</span>
+        <h2 class="section__title">Currently building<br />inside a real company.</h2>
+      </div>
+
+      <div class="exp-card reveal-up">
+        <div class="exp-card__top">
+          <div>
+            <h3>Web Development Intern</h3>
+            <p class="exp-card__org">SKH Private Limited · Gurugram, India · On-site</p>
+          </div>
+          <span class="badge badge--live">15 June 2026-31 July 2026</span>
+          <a href="SKH_Internship (6) (1).pdf" target="_blank" class="btn btn-pdf">
+            <span class="icon">📄</span> View Project Documentation
+          </a>
+        </div>
+        <p class="exp-card__desc">
+          Building a Role-Based Access Control (RBAC) <strong><b>Canteen Management System</b></strong> that replaced
+          a manual, dispute-prone meal-tracking process with an auditable digital workflow
+          across three portals — Employee, HR, and Vendor.
+        </p>
+        <ul class="exp-card__list">
+          <li>Designed the MySQL schema and REST API separating auto-generated "regular" meals from HR-approved "extra"
+            requests, closing the loophole that caused monthly billing disputes.</li>
+          <li>Implemented JWT authentication with role-based route guards across all three portals.</li>
+          <li>Built analytics dashboards with PDF/Excel export for HR–vendor reconciliation.</li>
+        </ul>
+
+        <div class="exp-card__footer">
+          <div class="tags">
+            <span class="tag">Angular</span><span class="tag">Node.js</span><span class="tag">Express</span><span
+              class="tag">MySQL</span><span class="tag">JWT</span><span class="tag">Render</span><span
+              class="tag">Vercel</span>
+            <a href="SKH.mp4" target="_blank" class="btn btn-video">
+              <span class="icon">🎥</span> View Video Demo
+            </a>
+          </div>
+          <p>📌 Note: This is a secure, internal enterprise application built exclusively for the company's employees
+            and vendors.
+            Due to strict data security and credential restrictions, a live public demo is not available.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="section__head">
+        <span class="section__tag"> Selected Work</span>
+        <h2 class="section__title">Six projects,<br />six different problems.</h2>
+      </div>
+
+      <div class="projects" id="projectsGrid">
+        <!-- Injected by script.js from PROJECTS data, but written statically here for no-JS fallback -->
+
+        <article class="project">
+          <div class="project__top">
+            <span class="badge badge--live">Live</span>
+          </div>
+          <h3>AlgoPath <span class="project__sub">(DSA Master)</span></h3>
+          <p>A structured DSA learning platform with a guided, topic-unlocking roadmap — built as an alternative to
+            static sheet-based trackers like Striver's or Love Babbar's.</p>
+          <ul>
+            <li>JWT auth, interactive algorithm visualizers, per-user progress tracking</li>
+            <li>Protected routes across the full learning flow</li>
+          </ul>
+          <div class="project__footer">
+            <div class="tags"><span class="tag">Angular 20</span><span class="tag">Node.js</span><span
+                class="tag">MongoDB</span></div>
+            <a href="https://github.com/goldigd05/ALGOPATH-AI.git" class="link-arrow link-arrow--soon"
+              data-role="github">GitHub ↗</a>
+            <a href="#" target="_blank" rel="noopener" class="link-arrow">Live demo
+              ↗</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__top">
+            <span class="badge badge--live">Live</span>
+          </div>
+          <h3>MachineGuard AI</h3>
+          <p>An industrial IoT predictive-maintenance system that flags equipment failure risk from live sensor data —
+            the project this portfolio's whole "systems that ship" claim rests on.</p>
+          <ul>
+            <li>Trained and served a scikit-learn model behind a Flask API</li>
+            <li>Survived extensive real deployment debugging — the hard, unglamorous part</li>
+          </ul>
+          <div class="project__footer">
+            <div class="tags"><span class="tag">Flask</span><span class="tag">scikit-learn</span><span
+                class="tag">MongoDB</span></div>
+            <a href="https://github.com/Harsh-Tiwari678/MachineGuard.AI.git" class="link-arrow link-arrow--soon"
+              data-role="github">GitHub
+              ↗</a>
+            <a href="https://machineguard-ai-2.onrender.com" target="_blank" rel="noopener" class="link-arrow">Live demo
+              ↗</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__top">
+            <span class="badge">RIFT 2026</span>
+          </div>
+          <h3>PharmaGuard AI</h3>
+          <p>A pharmacogenomics risk-prediction tool that analyzes VCF genomic files through an LLM-assisted pipeline,
+            built for the RIFT 2026 hackathon.</p>
+          <ul>
+            <li>FastAPI backend orchestrating a Gemini 2.0 Flash pipeline</li>
+            <li>Parses real genomic file formats, not toy data</li>
+          </ul>
+          <div class="project__footer">
+            <div class="tags"><span class="tag">FastAPI</span><span class="tag">Gemini 2.0 Flash</span></div>
+            <a href=" https://github.com/goldigd05/CoderBash_Lucknow" class="link-arrow link-arrow--soon"
+              data-role="github">GitHub
+              ↗</a>
+            <a href="https://coderbash-lucknow.onrender.com" target="_blank" rel="noopener" class="link-arrow">Live demo
+              ↗</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__top">
+            <span class="badge">ET AI Hackathon 2.0</span>
+          </div>
+          <h3>Industrial Safety Intelligence</h3>
+          <p>An AI-powered industrial safety system with compound risk detection and geospatial risk heatmaps, built for
+            ET AI Hackathon 2.0.</p>
+          <ul>
+            <li>XGBoost model for compound risk scoring</li>
+            <li>Angular frontend rendering live geospatial heatmaps</li>
+          </ul>
+          <div class="project__footer">
+            <div class="tags"><span class="tag">Angular</span><span class="tag">FastAPI</span><span
+                class="tag">XGBoost</span></div>
+            <a href="https://github.com/goldigd05/EA-TI-Hackthon.git" class="link-arrow link-arrow--soon"
+              data-role="github">GitHub ↗</a>
+            <a href="https://ea-ti-hackthon.vercel.app" target="_blank" rel="noopener" class="link-arrow">Live demo
+              ↗</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__top">
+            <span class="badge">Client Work</span>
+          </div>
+          <h3>Aditya Enterprises</h3>
+          <p>A complete multi-page business E-Commerce website for a door-hardware manufacturing company — real client,
+            real
+            constraints, real launch.</p>
+          <ul>
+            <li>Full site architecture and responsive layout from scratch</li>
+          </ul>
+          <div class="project__footer">
+            <div class="tags"><span class="tag">Angular 20</span><span class="tag">Node.js</span><span class="tag">MongoDB</span>
+            </div>
+            <a href="https://github.com/goldigd05/Aditya_Enterprises.git" class="link-arrow link-arrow--soon"
+              data-role="github">GitHub ↗</a>
+            <a href="#" target="_blank" rel="noopener" class="link-arrow">Live demo
+              ↗</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__top">
+            <span class="badge">In progress</span>
+          </div>
+          <h3>Resume Analyzer Bot</h3>
+          <p>A backend testing bot that scores and gives structured feedback on resumes — currently being built.</p>
+          <ul>
+            <li>Backend-focused build.</li>
+          </ul>
+          <div class="project__footer">
+            <div class="tags"><span class="tag">Python</span><span class="tag">Backend</span></div>
+            <a href="https://github.com/goldigd05/gitgrade.git" class="link-arrow link-arrow--soon"
+              data-role="github">GitHub ↗</a>
+            <a href="#" target="_blank" rel="noopener" class="link-arrow">Live demo
+              ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- MORE PROJECTS -->
+      <div class="more-projects reveal-up">
+        <h4>More projects(Not Live Still)</h4>
+        <div class="more-projects__list">
+          <div class="more-item"><span>Ethereum / Finance Testing Bot <br><a href="https://github.com/goldigd05/gitgrade.git" class="link-arrow link-arrow--soon" data-role="github">GitHub ↗</a></span><em>ML · Python</em></div>
+          <div class="more-item"><span>Library Management System<br><a href="https://github.com/goldigd05/gitgrade.git" class="link-arrow link-arrow--soon" data-role="github">GitHub
+            ↗</a></span><em>C++</em></div>
+          <div class="more-item"><span>Bank Management System <br><a href="https://github.com/goldigd05/gitgrade.git" class="link-arrow link-arrow--soon" data-role="github">GitHub
+            ↗</a></span><em>C++</em></div>
+          <div class="more-item"><span>Report Card Generator <br><a href="https://github.com/goldigd05/gitgrade.git" class="link-arrow link-arrow--soon" data-role="github">GitHub
+            ↗</a></span><em>C++</em></div>
+          <div class="more-item"><span>Random Quiz Game <br><a href="https://github.com/goldigd05/gitgrade.git" class="link-arrow link-arrow--soon" data-role="github">GitHub
+            ↗</a></span><em>C++</em></div>
+          <div class="more-item"><span>Tic-Tac-Toe <br><a href="https://github.com/goldigd05/gitgrade.git" class="link-arrow link-arrow--soon" data-role="github">GitHub
+            ↗</a></span><em>C++</em></div>
+          <div class="more-item"><span>Calculator <br><a href="https://github.com/goldigd05/gitgrade.git" class="link-arrow link-arrow--soon" data-role="github">GitHub
+            ↗</a></span><em>HTML/CSS</em><br></div>
+        </div>
+        <p class="more-projects__note">GitHub links for these are being added .</p>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="section section--dark" id="research">
+      <div class="section__head">
+        <span class="section__tag"> Research &amp; Achievements</span>
+        <h2 class="section__title">Published, presented,<br />and ranked.</h2>
+      </div>
+
+      <div class="research-grid">
+        <div class="research__papers reveal-up">
+          <h4>Publications</h4>
+          <div class="paper">
+            <p class="paper__title">"AI-Powered Predictive Maintenance using IoT and Blockchain"</p>
+            <p class="paper__meta">Published in IJACEN, Vol. 13, Issue 8</p><a href=https://iraj.in/journal/IJACEN//paper_detail.php?paper_id=22144
+              style="text-decoration: underline;color: blue;">Read Live Paper </a>
+          </div>
+          <div class="paper">
+            <p class="paper__title">International Conference Paper</p>
+            <p class="paper__meta">Presented in-person in Abu Dhabi</p>
+          </div>
+          <div class="paper">
+            <p class="paper__title">Heart Disease Prediction (with SHAP explainability)</p>
+            <p class="paper__meta">Working For publishing it.</p>
+          </div>
+        </div>
+
+        <div class="research__achievements reveal-up">
+          <h4>Achievements</h4>
+          <ul class="achievement-list">
+            <li><strong>Top 50 nationwide</strong> — National Finalist, MY Bharat Budget Quest 2026 (from 50,000+
+              participants)</li>
+            <li><strong>GSSoC contributor</strong> — GirlScript Summer of Code, 2025 &amp; 2026 cohorts</li>
+            <li><strong>AIR 18,115</strong> — Naukri Campus National Assessment Test (ANCAT 2026)</li>
+            <li><strong>Campus Ambassador</strong> — Unstop(2025-2026) &amp; E-Cell (2025–Present) &amp; IIT Bombay (2026–2027)</li>
+            <li>Attended NSS IDC 2025</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="contact__inner">
+        <span class="section__tag"> Contact</span>
+        <h2 class="contact__title">Let's build<br />something real.</h2>
+        <p class="contact__sub">Open to Frontend, Full-Stack, and AI/ML internships. If a form feels
+          like too much ceremony, just email me directly.</p>
+
+        <div class="contact__grid">
+          <form class="contact__form" id="contactForm" action="https://formsubmit.co/goldigond44@gmail.com"
+            method="POST">
+            <input type="hidden" name="_subject" value="New message from portfolio site" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="text" name="_honey" style="display:none" />
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary" id="submitBtn">Send message</button>
+            <p class="contact__status" id="formStatus"></p>
+          </form>
+
+          <div class="contact__side">
+            <a href="mailto:goldigond44@gmail.com" class="contact__email">goldigond44@gmail.com</a>
+            <div class="socials">
+              <a href="https://www.linkedin.com/in/goldi-kumari-35a019316" target="_blank" rel="noopener"
+                class="social" style="text-decoration: underline;color: blue;"> 
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z" />
+                </svg>
+                LinkedIn
+              </a>
+              <a href="https://github.com/goldigd05" target="_blank" rel="noopener" class="social" style="text-decoration: underline;color: blue;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2C6.48 2 2 6.58 2 12.19c0 4.49 2.87 8.3 6.84 9.65.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.46-1.18-1.11-1.5-1.11-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.55 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 2.5-.35c.85 0 1.71.12 2.5.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.2 10.2 0 0 0 22 12.19C22 6.58 17.52 2 12 2z" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <span>© 2026 Goldi Kumari</span>
+        <span>Built &#128150; with Angular · Node · MongoDB</span>
+      </footer>
+    </section>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
